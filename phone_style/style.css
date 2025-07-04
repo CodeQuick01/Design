@@ -1,0 +1,223 @@
+body {
+  background: linear-gradient(135deg, #a6c0fe, #f68084);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.iphone {
+  position: relative;
+  width: min(300px);
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: black;
+  border-radius: 50px;
+  border-style: solid;
+  border-color: #666;
+}
+
+.iphone::before {
+    z-index: 1;
+    content: '';
+    position: absolute;
+    inset: 8px;
+    background-color: white;
+    border-radius: 42px;
+    background-image: url(image/iphone-wallpaper.jpg);
+    background-size: cover;
+}
+
+.iphone .main {
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  height: 20px;
+  width: 100px;
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10px;
+  align-items: center;
+  border-radius: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.iphone .main::before {
+    content: '';
+    z-index: 1;
+    position: absolute;
+    background-color: black;
+    width: 100px;
+    margin: -5px;
+    height: 30px;
+    border-radius: 20px;
+    transition: 0.3s ease-in-out;
+}
+
+.camera1 {
+    background: radial-gradient(#3f3978,#0c0e29,#283964);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.camera2 {
+    background: radial-gradient(#3f3978,#0c0e29,#283964);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.up {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 17px;
+  font-size: 15px;
+  height: 35px;
+}
+
+.up .version {
+  width: 30%;
+  margin-left: 10px;
+}
+
+.up .version span {
+  color: white;
+}
+
+.up .up-icon {
+  width: 25%;
+  margin-right: 15px;
+}
+
+.up .up-icon span {
+  color: white;
+}
+
+.box-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 75%;
+  color: white;
+}
+
+.time {
+  font-size: 60px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+
+.buttons .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  margin: 0px 40px 50px 40px;
+}
+
+.buttons .button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.span1 {
+  position: absolute;
+  z-index: -1;
+  top: 90px;
+  left: -7px;
+  bottom: 0;
+  width: 20px;
+  height: 25px;
+  background-color: #525252;
+  border-radius: 5px;
+}
+
+.span2 {
+  position: absolute;
+  z-index: -1;
+  top: 130px;
+  left: -7px;
+  bottom: 0;
+  width: 20px;
+  height: 40px;
+  background-color: #525252;
+  border-radius: 5px;
+}
+
+.span3 {
+  position: absolute;
+  z-index: -1;
+  top: 180px;
+  left: -7px;
+  bottom: 0;
+  width: 20px;
+  height: 40px;
+  background-color: #525252;
+  border-radius: 5px;
+}
+
+.span4 {
+  position: absolute;
+  z-index: -1;
+  top: 130px;
+  right: -7px;
+  bottom: 0;
+  width: 20px;
+  height: 60px;
+  background-color: #636363;
+  border-radius: 5px;
+}
+
+.dash {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 130px;
+  height: 2px;
+}
+
+.span5 {
+  position: absolute;
+  left: 90px;
+  bottom: 25px;
+  z-index: 1;
+  width: 130px;
+  height: 4px;
+  border-radius: 50px;
+  background-color: white;
+}
