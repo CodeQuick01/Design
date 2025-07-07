@@ -1,0 +1,120 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+}
+
+.box {
+    position: relative;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    border-radius: 40px;
+    width: auto;
+    height: 40vh;
+}
+
+.box .nav {
+    display: flex;
+    flex-direction: column;
+    padding-right: 30px;
+    border-right: 2px solid black;
+}
+
+.box .nav span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0 15px 0;
+    padding: 10px;
+    border-radius: 40px;
+    background: transparent;
+    z-index: 1;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+.box .nav span i {
+    font-size: 25px;
+}
+
+.poster {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 40vh;
+    min-height: 40vh;
+    cursor: default;
+    transition: .5s;
+    z-index: -1;
+}
+
+#p-home {
+    position: absolute;
+    transform: translateX(-10%);
+    opacity: 0;
+}
+
+#p-services {
+    position: absolute;
+    transform: translateX(-10%);
+    opacity: 0;
+}
+
+#p-contact {
+    position: absolute;
+    transform: translateX(-10%);
+    opacity: 0;
+}
+
+#p-settings {
+    position: absolute;
+    transform: translateX(-10%);
+    opacity: 0;
+}
+
+/* Poster Active */
+
+#p-home-active {
+    position: relative;
+    opacity: 1;
+}
+
+#p-services-active {
+    position: relative;
+    opacity: 1;
+}
+
+#p-contact-active {
+    position: relative;
+    opacity: 1;
+}
+
+#p-settings-active {
+    position: relative;
+    opacity: 1;
+}
+
+/* Span active */
+
+#nav-home-active {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+#nav-services-active {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+#nav-contact-active {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+#nav-settings-active {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
