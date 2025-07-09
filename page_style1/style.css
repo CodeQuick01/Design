@@ -1,0 +1,131 @@
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(1,1,1,0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+#bg-light {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 50rem;
+    box-shadow: 0rem 0rem 40rem 15rem rgba(255, 255, 255, 0.7);
+}
+
+.box {
+    width: 25%;
+    min-height: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.title-icon {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    color: white;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    font-weight: 900;
+}
+
+.title {
+    font-weight: 900;
+}
+
+.description {
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 30px;
+    margin-bottom: 3rem;
+}
+
+.price h1 {
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.icon {
+    display: flex;
+    align-items: center;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 20px;
+    transition: .5s ease;
+}
+
+.icons a {
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.icons:hover {
+    background-color: rgba(1,1,1,0.7);
+    border-color: rgba(1,1,1,0.7);
+}
+
+.box-image {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.image {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 99;
+    transition: .7s ease;
+}
+
+.image-disable {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    transform: translateX(100%);
+    transition: 1s;
+}
+
+#image1 {
+    width: 32rem;
+    height: 40rem;
+    background-image: url(images/image1.png);
+}
+
+#image2 {
+    width: 35rem;
+    height: 35rem;
+    background-image: url(images/image2.png);
+}
+
+#image3 {
+    width: 28rem;
+    height: 40rem;
+    background-image: url(images/image3.png);
+}
+
